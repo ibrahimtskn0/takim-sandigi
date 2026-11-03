@@ -1,15 +1,22 @@
 .button {
     min-height: 44px;
     padding: .5rem 1rem;
-    background: var(--color-border);
+    background: var(--color-surface);
     border: 1px solid var(--color-border);
     border-radius: 8px;
     color: var(--color-text);
     font: inherit;
     cursor: pointer;
-    transition: background .3s ease;
+    transition: background .15s ease, border-color .15s ease;
 }
 
 .button:hover {
     background: var(--color-surface-hover);
+    border-color: var(--color-accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .button {
+        transition: none;
+    }
 }
