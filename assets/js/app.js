@@ -1,1 +1,3 @@
-console.log("Takım Sandığı başlatıldı.");
+import { initTheme } from "./theme.js";
+
+initTheme();
