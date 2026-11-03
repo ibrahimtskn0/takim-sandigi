@@ -15,8 +15,65 @@
     border-color: var(--color-accent);
 }
 
+.field-label {
+    display: block;
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+    font-weight: 600;
+}
+
+.input {
+    width: 100%;
+    max-width: 480px;
+    min-height: 44px;
+    padding: .5rem .75rem;
+    background: var(--color-input);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    color: var(--color-text);
+    font: inherit;
+}
+
+.search-status,
+.empty-state {
+    color: var(--color-text-muted);
+}
+
+.tool-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr));
+    gap: 1rem;
+}
+
+.tool-card {
+    display: block;
+    padding: 1rem;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    color: var(--color-text);
+    text-decoration: none;
+    transition: background .15s ease, border-color .15s ease;
+}
+
+.tool-card h3 {
+    margin: 0 0 .25rem;
+}
+
+.tool-card p {
+    margin: 0;
+    color: var(--color-text-muted);
+}
+
+.tool-card:hover {
+    background: var(--color-surface-hover);
+    border-color: var(--color-accent);
+}
+
 @media (prefers-reduced-motion: reduce) {
-    .button {
+
+    .button,
+    .tool-card {
         transition: none;
     }
 }

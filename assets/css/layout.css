@@ -72,6 +72,11 @@ main:focus {
     outline: none;
 }
 
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
 @media (max-width: 768px) {
     .app {
         grid-template-columns: 1fr;
@@ -110,7 +115,9 @@ main:focus {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .sidebar, .nav-link {
+
+    .sidebar,
+    .nav-link {
         transition: none;
     }
 }

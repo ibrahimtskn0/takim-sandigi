@@ -1,6 +1,7 @@
 import { updateActiveLink } from "./navigation.js";
 import { tools } from "./tools-data.js";
-import { renderHome, renderNotFound, renderTool } from "./views.js";
+import { renderHome } from "./home.js";
+import { renderNotFound, renderTool } from "./views.js";
 
 const APP_NAME = "Takım Sandığı";
 
