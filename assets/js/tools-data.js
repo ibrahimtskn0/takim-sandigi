@@ -3,7 +3,8 @@ export const tools = [
         id: "json",
         name: "JSON Biçimlendirici",
         description: "JSON verisini doğrular, biçimlendirir ve küçültür.",
-        category: "Geliştirici"
+        category: "Geliştirici",
+        load: () => import("./tools/json-formatter.js"),
     },
     {
         id: "gradient",

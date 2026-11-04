@@ -8,6 +8,7 @@
     --color-text: #f1f0f7;
     --color-text-muted: #a9a8b8;
     --color-accent: #a78bfa;
+    --color-on-accent: #14111f;
     --color-success: #4ade80;
     --color-error: #f87171;
 }
@@ -22,6 +23,7 @@
     --color-text: #1c1a29;
     --color-text-muted: #5d5a70;
     --color-accent: #6d28d9;
+    --color-on-accent: #ffffff;
     --color-success: #15803d;
     --color-error: #b91c1c;
 }

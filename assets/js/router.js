@@ -4,12 +4,15 @@ import { renderHome } from "./home.js";
 import { renderNotFound, renderTool } from "./views.js";
 
 const APP_NAME = "Takım Sandığı";
+let routerController = null;
 
 function getCurrentPath() {
     return window.location.hash.slice(1) || "/";
 }
 
 function renderRoute(main) {
+    routerController?.abort();
+    routerController = new AbortController();
     const path = getCurrentPath();
     const tool = tools.find((item) => `/${item.id}` === path);
 
@@ -17,7 +20,7 @@ function renderRoute(main) {
         renderHome(main);
         document.title = APP_NAME;
     } else if (tool) {
-        renderTool(main, tool);
+        renderTool(main, tool, routerController.signal);
         document.title = `${tool.name} | ${APP_NAME}`;
     } else {
         renderNotFound(main);
