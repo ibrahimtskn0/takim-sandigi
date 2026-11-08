@@ -20,7 +20,7 @@ export async function renderTool(container, tool, signal) {
             return;
         }
 
-        module.mount(body, signal);
+        await module.mount(body, signal);
     } catch (error) {
         console.error(error);
         body.replaceChildren(

@@ -79,3 +79,19 @@
     height: 1.25rem;
     accent-color: var(--color-accent);
 }
+
+.qr-preview {
+    margin-top: 1rem;
+}
+
+.qr-preview canvas {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.qr-content {
+    color: var(--color-text-muted);
+    overflow-wrap: anywhere;
+}

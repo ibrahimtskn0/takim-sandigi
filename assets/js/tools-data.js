@@ -31,7 +31,8 @@ export const tools = [
         id: "qr",
         name: "QR Kod Oluşturucu",
         description: "Metin veya bağlantıdan QR kod oluşturur.",
-        category: "Metin ve Paylaşım"
+        category: "Metin ve Paylaşım",
+        load: () => import("./tools/qr-generator.js")
     },
     {
         id: "color",
