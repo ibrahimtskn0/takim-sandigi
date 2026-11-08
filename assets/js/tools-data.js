@@ -24,7 +24,8 @@ export const tools = [
         id: "password",
         name: "Şifre Oluşturucu",
         description: "Tarayıcında güvenli ve rastgele şifreler üretir.",
-        category: "Geliştirici"
+        category: "Geliştirici",
+        load: () => import("./tools/password-generator.js")
     },
     {
         id: "qr",

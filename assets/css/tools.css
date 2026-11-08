@@ -50,3 +50,32 @@
     font-size: 1.5rem;
     font-weight: 700;
 }
+
+.narrow {
+    max-width: 480px;
+}
+
+.password-output {
+    font-family: ui-monospace, Consolas, monospace;
+    font-size: 1.125rem;
+}
+
+.option-group {
+    margin: 1rem 0 0;
+    padding: 0;
+    border: 0;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-height: 44px;
+    cursor: pointer;
+}
+
+.checkbox input {
+    width: 1.25rem;
+    height: 1.25rem;
+    accent-color: var(--color-accent);
+}
