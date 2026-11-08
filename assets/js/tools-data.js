@@ -17,7 +17,8 @@ export const tools = [
         id: "text",
         name: "Metin Araçları",
         description: "Metni sayar, dönüştürür ve temizler.",
-        category: "Metin ve Paylaşım"
+        category: "Metin ve Paylaşım",
+        load: () => import("./tools/text-toolkit.js")
     },
     {
         id: "password",

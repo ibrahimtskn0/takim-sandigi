@@ -25,3 +25,28 @@
     min-height: 44px;
     accent-color: var(--color-accent);
 }
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(140px, 100%), 1fr));
+    gap: .75rem;
+    margin: 1rem 0 0;
+}
+
+.stats div {
+    padding: .75rem 1rem;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+}
+
+.stats dt {
+    color: var(--color-text-muted);
+    font-size: .875rem;
+}
+
+.stats dd {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
