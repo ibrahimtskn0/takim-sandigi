@@ -34,6 +34,10 @@
     font: inherit;
 }
 
+.input[aria-invalid="true"] {
+    border-color: var(--color-error);
+}
+
 .search-status,
 .empty-state {
     color: var(--color-text-muted);

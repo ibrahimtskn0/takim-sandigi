@@ -38,6 +38,7 @@ export const tools = [
         id: "color",
         name: "Renk Dönüştürücü",
         description: "HEX, RGB ve HSL biçimleri arasında dönüşüm yapar.",
-        category: "Tasarım"
+        category: "Tasarım",
+        load: () => import("./tools/color-converter.js")
     },
 ];
