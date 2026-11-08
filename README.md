@@ -4,8 +4,8 @@ Yazılımcıların ve günlük bilgisayar kullanıcılarının ihtiyaç duyduğu
 
 Reklam, üyelik veya ücretli özellik yoktur. Tüm işlemler tarayıcıda yapılır; girilen hiçbir veri bir sunucuya gönderilmez.
 
-**Geliştiren:** [Adın Soyadın]
-**Ders:** İnternet Programcılığı-I, [Okulunun adı]
+**Geliştiren:** İbrahim Taşkın
+**Ders:** İnternet Programcılığı-I, Kayseri Ünversitesi Teknik Bilimler M.Y.O.
 
 ## Kullanılan teknolojiler
 
