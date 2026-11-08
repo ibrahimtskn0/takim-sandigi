@@ -97,17 +97,22 @@
 }
 
 .color-layout {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 1.5rem;
-    align-items: start;
+    align-items: flex-start;
 }
 
 .color-swatch {
+    flex: 0 1 320px;
     aspect-ratio: 1;
-    max-width: 320px;
     border: 1px solid var(--color-border);
     border-radius: 12px;
+}
+
+.color-layout>div:last-child {
+    flex: 1 1 280px;
+    max-width: 480px;
 }
 
 .input-row {

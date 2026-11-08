@@ -1,9 +1,9 @@
 import { copyText } from "../clipboard.js"
 
 const DEFAULTS = {
-  color1: "#7c3aed",
+  color1: "#3cc8c0",
   stop1: "0",
-  color2: "#22d3ee",
+  color2: "#d9a441",
   stop2: "100",
   angle: "90"
 }

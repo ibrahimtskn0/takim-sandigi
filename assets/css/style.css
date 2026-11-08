@@ -1,31 +1,44 @@
 :root {
     color-scheme: dark;
-    --color-bg: #0f0f17;
-    --color-surface: #1a1a26;
-    --color-surface-hover: #242433;
-    --color-input: #12121c;
-    --color-border: #2e2e40;
-    --color-text: #f1f0f7;
-    --color-text-muted: #a9a8b8;
-    --color-accent: #a78bfa;
-    --color-on-accent: #14111f;
-    --color-success: #4ade80;
-    --color-error: #f87171;
+    --color-bg: #0e1a1c;
+    --color-surface: #152629;
+    --color-surface-hover: #1d3236;
+    --color-input: #0b1517;
+    --color-border: #2a4246;
+    --color-text: #eef3ef;
+    --color-text-muted: #9fb5b1;
+    --color-accent: #3cc8c0;
+    --color-accent-2: #d9a441;
+    --color-on-accent: #0e1a1c;
+    --color-success: #6fcf97;
+    --color-error: #f08a6c;
+    --color-glass: rgba(21, 38, 41, 0.65);
+    --color-glass-border: rgba(159, 181, 177, 0.18);
+    --glow-1: rgba(60, 200, 192, 0.18);
+    --glow-2: rgba(217, 164, 65, 0.12);
+    --shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    --radius: 14px;
 }
 
 [data-theme="light"] {
     color-scheme: light;
-    --color-bg: #f6f5fb;
-    --color-surface: #ffffff;
-    --color-surface-hover: #efedf8;
-    --color-input: #ffffff;
-    --color-border: #d9d6e8;
-    --color-text: #1c1a29;
-    --color-text-muted: #5d5a70;
-    --color-accent: #6d28d9;
+    --color-bg: #f5f1e6;
+    --color-surface: #fffdf7;
+    --color-surface-hover: #ece5d3;
+    --color-input: #fffdf7;
+    --color-border: #d8cfb8;
+    --color-text: #1f2a28;
+    --color-text-muted: #5c6a66;
+    --color-accent: #0f7c80;
+    --color-accent-2: #a86b14;
     --color-on-accent: #ffffff;
-    --color-success: #15803d;
-    --color-error: #b91c1c;
+    --color-success: #2f7d4f;
+    --color-error: #b4452b;
+    --color-glass: rgba(255, 253, 247, 0.7);
+    --color-glass-border: rgba(31, 42, 40, 0.1);
+    --glow-1: rgba(15, 124, 128, 0.14);
+    --glow-2: rgba(168, 107, 20, 0.12);
+    --shadow: 0 8px 24px rgba(31, 42, 40, 0.08);
 }
 
 *,
@@ -36,7 +49,11 @@
 
 body {
     margin: 0;
-    background: var(--color-bg);
+    background:
+        radial-gradient(circle at 15% 0%, var(--glow-1), transparent 45%),
+        radial-gradient(circle at 90% 100%, var(--glow-2), transparent 40%),
+        var(--color-bg);
+    background-attachment: fixed;
     color: var(--color-text);
     font-family: system-ui, sans-serif;
     line-height: 1.5;
