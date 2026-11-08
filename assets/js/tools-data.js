@@ -10,7 +10,8 @@ export const tools = [
         id: "gradient",
         name: "CSS Gradient Oluşturucu",
         description: "Canlı önizlemeyle CSS gradient kodu üretir.",
-        category: "Tasarım"
+        category: "Tasarım",
+        load: () => import("./tools/gradient-generator.js")
     },
     {
         id: "text",
